@@ -11,7 +11,7 @@ setup(
       packages = find_packages(),
       version = __version__,
       # Abhängigkeiten
-      install_requires = ["chromalog==1.0.4", "requests==2.8.0"],
+      install_requires = ["configobj==5.0.6", "chromalog==1.0.4", "requests==2.8.0"],
       # PyPI metadata
       author = "Peter Schär",
       author_email = "peter.schaer@bve.be.ch",
