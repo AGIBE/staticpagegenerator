@@ -26,6 +26,11 @@ def process_content(content):
     return extracted_content
 
 def generate():
+    '''
+    Erzeugt die HTML-Files, mit denen die statischen
+    Suchen im Geoportal betrieben werden.
+    Vorlage = https://bitbucket.org/stubr/staticpagegenerator
+    '''
     config = staticpagegenerator.config.get_config()
     logger = staticpagegenerator.log.init_logging(config)
     
@@ -39,7 +44,6 @@ def generate():
         
     for staticpage in config['STATICPAGES'].items():
         
-        print(staticpage[1])
         search_url = base_url + staticpage[1]['params']
         
         logger.info("Downloading content from ")
