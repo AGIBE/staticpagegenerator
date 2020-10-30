@@ -5,6 +5,8 @@
 build/*
 dist/*
 docs/_build/*
-staticpagegenerator.egg-info/*
+src/staticpagegenerator.egg-info/*
 *.pyt.xml
 *.recover
+.vscode/*
+*.code-workspace
